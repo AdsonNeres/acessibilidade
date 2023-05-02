@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questionário</title>
+</head>
+<body>
+    <header>
+        <img src="https://d33wubrfki0l68.cloudfront.net/2f7693e1933ac514c960f51ceae72c91c6716eb2/b2efd/img/fcc_primary_small.svg" id="logotipo" alt="logotipo">
+        <h1>HTML / CSS</h1>
+        <nav>
+          <ul>
+            <li><a accesskey="w" href="#student-info">INFO</a></li>
+            <li><a accesskey="y" href="#html-questions">HTML</a></li>
+            <li><a accesskey="z" href="#css-questions">CSS</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Informações do aluno</h2>
+                <div class="info">
+                    <label for="student-name">Nome e Sobrenome</label>
+                    <input id="student-name" type="text">
+                </div>
+
+                <div class="info">
+                    <label for="student-email">E-mail</label>
+                    <input id="student-email" type="email">
+                </div>
+
+                <div class="info">
+                    <label for="student-date">Nascimento <span class="sr-only">(sua data de nascimento)</span></label>
+                    <input id="student-date" type="date">
+                </div>
+                
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">Questões HTML</h2>
+
+                    <div class="question-block">
+                        <p>1</p>
+                        <fieldset class="question-block" name="questao1">
+                            <legend>O elemento <strong>Legend</strong> representa uma legenda para o conteúdo de seu elemento. Qual elemento é esse?</legend>
+                            <ul class="respostas">
+                                <li><label for="html1"><input type="radio" name="opcao1-opcao2-opcao3-opcao4" id="html1" value="Placeholder">
+                                    Placeholder
+                                </label></li>
+                                <li><label for="html2"><input type="radio" name="opcao1-opcao2-opcao3-opcao4" id="html2" value="name">
+                                    Name
+                                </label></li>
+                                <li><label for="html3"><input type="radio" name="opcao1-opcao2-opcao3-opcao4" id="html3" value="fieldset">
+                                    Fieldset
+                                </label></li>
+                                <li><label for="html4"><input type="radio" name="opcao1-opcao2-opcao3-opcao4" id="html4" value="Figcaption">
+                                    Figcaption
+                                </label></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+               
+                    <div class="question-block" name="questao2">
+                        <p>2</p>
+                        <fieldset class="question-block">
+                            <legend>Um elemento de rótulo que aninha um elemento de entrada deve ter um atributo for com o mesmo valor que o <strong>id</strong> da entrada</legend>
+                            <ul class="respostas">
+                                 <li><label for="html5"><input type="radio" name="opcao5-opcao6" id="html5">
+                                    Verdadeiro
+                                </label></li>
+                                 <li><label for="html6"><input type="radio" name="opcao5-opcao6" id="html6">
+                                    Falso
+                                </label></li>
+                             </ul>
+                        </fieldset>
+                    </div> 
+
+                    <div class="question-block">
+                        <p>3</p>
+                        <fieldset class="question-block" name="questao3">
+                            <legend>Para fazer um link com abertura externa devo usar qual elemento</legend>
+                            <ul class="respostas">
+                                 <li><label for="html7"><input type="radio" name="opcao7-opcao8" id="html7">
+                                    a target="_blank"
+                                </label></li>
+                                 <li><label for="html8"><input type="radio" name="opcao7-opcao8" id="html8">
+                                    a target="_parent"
+                                </label></li>
+                             </ul>
+                        </fieldset>
+                    </div> 
+            </section>
+
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">Questões CSS</h2>
+                <div class="linha-de-formulario">
+                    <div class="pergunta">
+                        <label for="front">Você é um desenvolvedor front-end?</label>
+                    </div>
+                    <div class="resposta">
+                        <select required id="front" name="front">
+                            <option disabled selected value="">Escolha uma opção</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                            <option value="estudando">Estou em desenvolvimento</option>
+                        </select>
+                    </div>
+                    <div class="pergunta">
+                        <label for="duvida">Você tem alguma pergunta</label>
+                    </div>
+                    <div class="resposta">
+                        <textarea name="duvida" id="duvida" cols="40" rows="5" placeholder="O Que é Flexbox...."></textarea>
+                    </div>
+                </div>
+            </section>
+                        <button name="concluido" type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <address>
+            <a href="https://github.com/AdsonNeres?tab=repositories">Adson Neres</a> <br>
+            São Paulo <br>
+            Brasil <br>
+        </address>
+    </footer>
+</body>
+</html>
